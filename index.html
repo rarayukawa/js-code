@@ -4,26 +4,11 @@
     <meta charset="UTF-8">
     <title>JS_code</title>
     <link rel="stylesheet" href="style.css"/>
-    <script src="charAt.js"></script>
+    <script src="replace.js" defer></script>
   </head>
   <body>
-    <header>
-      <label>県名の最初の一文字を入力してください<input id="search-world-input" maxlength="1" type="text"></label>
-    </header>
-    <div id="prefecture-list">
-      <button data-name="北海道" data-phonetic="ほっかいどう">北海道</button>
-      <button data-name="青森" data-phonetic="あおもり">青森</button>
-      <button data-name="岩手" data-phonetic="いわて">岩手</button>
-      <button data-name="宮城" data-phonetic="みやぎ">宮城</button>
-      <button data-name="秋田" data-phonetic="あきた">秋田</button>
-      <button data-name="山形" data-phonetic="やまがた">山形</button>
-      <button data-name="福島" data-phonetic="ふくしま">福島</button>
-      <button data-name="富山" data-phonetic="とやま">富山</button>
-      <button data-name="新潟" data-phonetic="にいがた">新潟</button>
-      <button data-name="長野" data-phonetic="ながの">長野</button>
-      <button data-name="東京" data-phonetic="とうきょう">東京</button>
-      <button data-name="大阪" data-phonetic="おおさか">大阪</button>
-
-    </div>
+    <input id="phoneNumberTxet" placeholder="電話番号" type="tel">
+    <p class="caption"><small>⚠︎　実際にデータは送信されません</small></p>
+    <button id="submitButton" type="submit">送信する</button>
   </body>
 </html>
