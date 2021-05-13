@@ -1,15 +1,6 @@
 const date = new Date();
-const hour = date.getHours();
-let meridiem;
-let hour2;
-if (hour < 12) {
-  meridiem = '午前';
-  hour2 = hour;
-} else {
-  meridiem = '午後';
-  hour2 = hour - 12;
-}
+const day = date.getDay();
+const dayList = ['日', '月', '火', '水', '木', '金', '土'];
+const label = dayList[day]
 
-const label = `${meridiem}${hour2}時`;
-
-document.querySelector('#log').innerHTML = `現在時刻は${label}です`;
+document.querySelector('#log').innerHTML = `今日は${label}曜日です`;
