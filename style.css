@@ -1,7 +1,3 @@
-.rectangle {
-  background-image: linear-gradient(-135deg, #00aaff, #5500ff);
-}
-
-.rectangle.big-size {
-  background-image: linear-gradient(-135deg, red, #ff00a2);
+#myBox {
+  background-color: red;
 }
